@@ -1,0 +1,142 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* White background for the body */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body stretches across full viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+header {
+    background-color: #e23744;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10; /* Keep header on top of other content */
+}
+
+.logo img {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ffd1d1;
+}
+
+/* Hero Section - with bg image */
+.hero {
+    background: url('/img/bg.png') no-repeat center center; /* Hero background image */
+    background-size: cover;
+    text-align: center;
+    padding: 120px 20px; /* Increased padding for a larger hero section */
+    color: white;
+    min-height: 80vh; /* Set minimum height for scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center;
+}
+
+/* Fixed logo size */
+.hero-logo {
+    width: 200px; /* A more appropriate size for the logo */
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.hero input {
+    padding: 14px 20px;
+    width: 90%;
+    max-width: 420px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    background-color: #ffffff; /* White background */
+    color: #333;
+    min-height: 50vh; /* Set min height for section to keep it scrollable */
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #f8f8f8;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #e23744;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
