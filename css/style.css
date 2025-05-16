@@ -49,7 +49,7 @@ header ul li a:hover {
 
 /* Hero Section - with bg image */
 .hero {
-    background: url('./img/bg.png') no-repeat center center; /* Hero background image */
+    background: url('../img/bg.png') no-repeat center center; /* Hero background image */
     background-size: cover;
     text-align: center;
     padding: 120px 20px; /* Increased padding for a larger hero section */
